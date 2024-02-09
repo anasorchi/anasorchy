@@ -1,0 +1,212 @@
+*,
+ ::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+}
+
+.nav {
+    position: fixed;
+    /* Fix the navigation bar position */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    /* Add background color as needed */
+    z-index: 1000;
+    /* Ensure it appears above other content */
+}
+
+
+body {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+    background: linear-gradient( #082231 30%, #00a5e9 100%);
+    background-size: cover;
+    text-align: center;
+}
+
+.port {
+    background: #082231;
+    width: 1220px;
+    height: 600px;
+    margin: 80px auto;
+    border-radius: 40px;
+    box-shadow: 0px 0px 50px 10px black;
+}
+
+
+/*en tet*/
+
+.did {
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 15px;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+/*list*/
+
+.list {
+    position: absolute;
+    font-family: poppins;
+    margin-top: 20px;
+    margin-left: 670px;
+}
+
+.list li {
+    display: inline;
+}
+
+.port a {
+    text-decoration: none;
+    color: white;
+    margin: 15px;
+    font-size: large;
+}
+
+.port a:hover {
+    color: #00a5e9;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/*info*/
+
+.info {
+    position: absolute;
+}
+
+.info2 .para {
+    display: none;
+}
+
+.info2 .para.show {
+    display: block;
+}
+
+.info .name p {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    padding-top: 200px;
+    padding-left: 100px;
+}
+
+.info .info1 {
+    font-weight: bold;
+    color: #00a5e9;
+    font-size: 25px;
+    padding-left: 100px;
+}
+
+.info .info2 {
+    position: absolute;
+    font-size: 14px;
+    color: white;
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 100px;
+}
+
+
+/*bouton*/
+
+.bouton {
+    position: absolute;
+    margin-top: 400px;
+    margin-left: 100px;
+}
+
+button {
+    font-weight: bold;
+}
+
+.bouton .btn1 {
+    padding: 5px 15px;
+    color: black;
+    background: #00a5e9;
+    border: 2px solid #00a5e9;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bouton .btn2 {
+    color: #00a5e9;
+    padding: 5px 15px;
+    background: transparent;
+    border: 2px solid #00a5e9;
+    border-radius: 5px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.bouton .btn1:hover {
+    padding: 5px 15px;
+    color: #00a5e9;
+    background: transparent;
+    border: 2px solid #00a5e9;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.bouton .btn2:hover {
+    color: black;
+    padding: 5px 15px;
+    background: #00a5e9;
+    border: 2px solid #00a5e9;
+    border-radius: 5px;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/*icone*/
+
+.icone {
+    position: absolute;
+}
+
+.icone li {
+    display: inline;
+    margin: 15px;
+}
+
+.icone img {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    margin-top: 550px;
+    margin-left: 85px;
+}
+
+.icone img:hover {
+    filter: invert(50%);
+    transition: all 0.5s ease-in-out;
+}
+
+
+/*avatar*/
+
+.avat {
+    position: absolute;
+}
+
+.avat img {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    margin-left: 770px;
+    margin-top: 170px;
+    border-radius: 100%;
+    border: 5px solid #00a5e9;
+    box-shadow: 0px 0px 50px #00a5e9;
+}

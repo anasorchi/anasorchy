@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_code.css">
+    <title>Anas Orchi</title>
+    <style>
+        .contact {
+            padding-top: 8%;
+            padding-left: 25%;
+            padding-right: 20%;
+        }
+        
+        .contact h2 {
+            padding-right: 10%;
+            font-size: 40px;
+            color: aliceblue;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .contact form {
+            width: 600px;
+            text-align: center;
+        }
+        
+        form .input-box {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .field .item {
+            width: 100%;
+            padding: 18px;
+            background: transparent;
+            border: 2px solid #0ef;
+            outline: none;
+            border-radius: 6px;
+            font-size: 16px;
+            color: beige;
+            margin: 12px 0;
+        }
+        
+        .field .item::placeholder {
+            color: #00a5e9;
+        }
+        
+        form .textarea-field .item {
+            resize: none;
+        }
+        
+        form button {
+            padding: 5px 15px;
+            color: black;
+            background: #00a5e9;
+            border: 2px solid #00a5e9;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        form button:hover {
+            padding: 5px 15px;
+            color: #00a5e9;
+            background: transparent;
+            border: 2px solid #00a5e9;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+        }
+        
+        .field .error-text {
+            font-size: 14.5px;
+            color: red;
+            text-align: left;
+            margin: -5px 0 10px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="port">
+        <div class="did">
+            <p>ORCHY.</p>
+        </div>
+
+        <!--list-->
+        <div class="list">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="cv.html">Portfolio</a></li>
+                <li><a href="sevices.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <section class="contact">
+            <h2>Contact Me!</h2>
+            <form action="#">
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="text" placeholder="full Name" id="name" class="item" autocomplete="off">
+                        <div class="error-text">Full Name can't be blank</div>
+                    </div>
+                    <div class="input-field field">
+                        <input type="text" placeholder="Email Adress" id="email" class="item" autocomplete="off">
+                        <div class="error-text">Email can't be blank</div>
+                    </div>
+                </div>
+                <div class="input-box">
+                    <div class="input-field field">
+                        <input type="text" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
+                        <div class="error-text">Phone Number can't be blank</div>
+                    </div>
+                    <div class="input-field field">
+                        <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                        <div class="error-text">Subject can't be blank</div>
+                    </div>
+                </div>
+                <div class="textarea-field field">
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="Your message" class="item" autocomplete="off"></textarea>
+                    <div class="error-text">Message can't be blank</div>
+                </div>
+                <button type="submit" onclick="sendEmail()">Send Me</button>
+            </form>
+        </section>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js.js"></script>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_code.css">
+    <title>Anas Orchi</title>
+    <style>
+        .nav {
+            position: absolute;
+            font-family: poppins;
+            margin-top: 20px;
+            margin-left: 670px;
+        }
+        .anas {
+            padding-top: 60px;
+            /* Adjust padding to accommodate the fixed navigation bar */
+        }
+
+        .paragraph {
+            padding-top: 10%;
+            padding-right: 10%;
+            width: 800px;
+            height: 150px;
+            color: aliceblue;
+            font-size: 20px;
+            /* Adjust the maximum height as needed */
+        }
+        .nav li {
+            display: inline;
+        }
+        
+        .port a {
+            text-decoration: none;
+            color: white;
+            margin: 15px;
+            font-size: large;
+        }
+        
+        .port a:hover {
+            color: #00a5e9;
+            transition: all 0.5s ease-in-out;
+        }
+        
+        .anas {
+            padding-top: 60px;
+        }
+        .avatar {
+            position: absolute;
+        }
+
+        .avatar img {
+            position: absolute;
+            width: 320px;
+            height: 400px;
+            margin-left: 770px;
+            margin-top: 70px;
+
+            border: 5px solid #00a5e9;
+            box-shadow: 0px 0px 50px #00a5e9;
+        }
+        .h1{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="port">
+        <div class="did">
+            <p>ORCHY.</p>
+        </div>
+        <!--list-->
+        <div class="list">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="cv.html">Portfolio</a></li>
+                <li><a href="sevices.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        </nav>
+
+        <div class="anas">
+            <!-- Move the 'anas' div inside 'port' -->
+            <div class="info">
+                <div class="name">
+                    <H1 style="color: white; padding-top: 3%;padding-right: 60%;text-decoration-line: underline">About Me!</H1>
+                </div>
+                <div class="paragraph">
+
+                </div>
+            </div>
+            <div class="bouton">
+                <button class="btn1" id="displayArea" onclick="displayParagraph()">Toggle Paragraph</button>
+            </div>
+
+        </div>
+        <!--image-->
+        <div class="avatar">
+            <img src="images/2.jpg" alt="didis">
+        </div>
+    </div>
+    <script>
+        function displayParagraph() {
+            const container = document.querySelector('.paragraph');
+            container.innerHTML += "<p class='paragraph'>As a 20-year-old Computer Science student at École Supérieure de Technologie de Casablanca with a Baccalauréat Scientifique background<br> I'm passionate about programming, algorithms, and software development.  I thrive in collaborative environments and am driven by a curiosity to explore emerging technologies. <br> My goal is to contribute to innovative projects and help shape the future of technology.</p>";
+        }
+    </script>
+
+</body>
+
+</html>
